@@ -73,35 +73,99 @@
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <h3 class="smallertitle">Attendance Management System</h3>
+                <h3 class="wrap-small smallertitle">Attendance <span class="text-nowrap">Management System</span></h3>
                 <span class="image main"
-                  ><img src="images/nashville_nutrition_spot.PNG" alt=""
+                  ><img src="images/class-dashboard.PNG" alt=""
                 /></span>
                 <p>
-                  Paired with a local business in Nashville, Tennessee to
-                  provide a website their customers can use. This website has a
-                  classic and timeless design, providing easy navigation for
-                  customers. The website includes a full menu/ordering system
-                  integrated with Square and location services integrated with
-                  Google Maps.
+                  The following application allows a school or organization to track and organize their attendance. <br> <br> The attendance management system allows the user to log in as either an administrator or a teacher, which determines which features the user will be able to use.
                 </p>
+
+                <h4>Links</h4>
+                <p>
+                  Application: <a href="https://lit-mountain-98161.herokuapp.com/">https://lit-mountain-98161.herokuapp.com/</a> <br>
+                  Github: <a href="https://github.com/LukedeArmas/attendance-system">https://github.com/LukedeArmas/attendance-system</a> <br> 
+                  Trello board: <a href="https://trello.com/b/lcn8eZ9n/attendance-system">https://trello.com/b/lcn8eZ9n/attendance-system</a> 
+                </p>
+
+                <h4>Test Accounts:</h4> 
+                <p>
+                  Administrator: username: 'admin', password: 'admin'</br>
+                  Teacher: username: 'ldearmas', password: '111111'
+                </p>
+
+
                 <span class="image main"
                   ><img
-                    src="images/nashville_nutrition_spot_ordering.PNG"
+                    src="images/attendance.PNG"
                     alt=""
                 /></span>
-                <p>Project was created with React and deployed on Heroku</p>
-                <p>
-                  Source Code: &nbsp;<a
-                    href="https://github.com/skandasastry/nashville-nutrition-spot"
-                    >https://github.com/skandasastry/nashville-nutrition-spot</a
-                  >
-                  <br />
-                  Application Link: &nbsp;
-                  <a href="https://blooming-eyrie-53102.herokuapp.com/"
-                    >https://blooming-eyrie-53102.herokuapp.com/</a
-                  >
-                </p>
+                <div>
+                  <p>
+                    <h4>Teacher features:</h4> 
+                    1. View class dashboard of all the classes the teacher instructs.<br>
+                    2. View class details along with a table of students in the class, containing the attendance mark for each student.<br>
+                    3. View every student in their class, allowing the teacher to view their attendance marks in other courses.<br>
+                    4. View attendance home page for the class, containing the average class percentage for the class and a table of all attendances recorded.<br>
+                    5. Mark new attendance.<br>
+                    6. Update or delete a recorded attendance.<br>
+                  </p>
+
+
+                  <h4>Administrator features:</h4>
+                  <p>
+                    1. All of the Teacher features (the administrators class dashboard will contain all classes).<br>
+                    2. Add, update, or delete a class.<br>
+                    3. Add or remove students from a class.<br>
+                    4. View student dashboard of all students.<br>
+                    5. View student details, including their currently enrolled classes and their attendance marks in these classes.<br>
+                    6. Add, update, or delete a student.<br>
+                    7. View teacher dashboard of all students.<br>
+                    8. View teacher details, including the classes they currently teach.<br>
+                    9. Add, update, or delete a teacher.<br>
+                    10. Update a teacher's password (without seeing their previous password).<br>
+                  </p> 
+                  
+
+
+                  <h4>Additional Application Features:</h4>
+                  <p>
+                    1. Pagination for student, class, and teacher tables (server side and client side were implemented, and usage depends on the page).<br>
+                    2. Search bar for student, class, and teacher tables (this works in conjunction with client side pagination when it is used).<br>
+                    3. Responsive sidebar menu, which becomes a dropdown menu at a smaller screen size.<br>
+                    4. Date picker component, allowing the user to choose a date for a new attendance record.<br> 
+                    5. Prevent the user from marking attendance for a date that has already been recorded and for a date past today on client side (also handled on server side).<br>
+                    6. Active navigation list, helping the user keep track of where they are in the application.<br>
+                    7. Client side form validation, preventing the user from submitting empty or incorrect information.<br>
+                    8. Show password functionality, allowing the user to show or hide their password entry.<br>
+                    9. Confirm password validation, making sure the user enters their password entry twice to confirm.<br>
+                    10. User login page.
+                  </p> 
+
+                  <h4>Patterns/Methodologies:</h4> 
+                  <p>
+                    1. Model View Controller: Mongoose models, Express/Javascript controllers, EJS views.<br>
+                    2. Express Router: Separate Class, Student, Teacher, and Attendance routing.<br>
+                    3. Reusable Views: Views are separated into reusable components/partials. State is passed top down.<br>
+                    4. Authorization: Express middleware to check if logged in first, then the type of user.<br>
+                    5. Agile Development: Assisted with the use of a Trello board
+                  </p>
+                  
+
+                  <h4>Main Technologies:</h4> 
+                  <p>
+                    1. MongoDB: Database.<br>
+                    2. Mongoose: Database modeling.<br>
+                    3. Node: Back-end runtime.<br>
+                    4. Express: Server framework.<br>
+                    5. Joi: Server side user data validation.<br>
+                    6. EJS: HTML templating.<br>
+                    7. Bootstrap: Front-end framework.<br>
+                    8. Javascript: Front-end scripting.<br>
+                    9. HTML/CSS: Markup and styling.<br>
+                    10. Git: Version Control.
+                  </p>
+                </div>
               </div>
               <div class="carousel-item">
                 <h3 class="smallertitle">Smoothie Shop Website</h3>
@@ -157,6 +221,10 @@
             <div class="field">
               <label for="email">Email:</label>
               <p id="email">ldearmas5853@gmail.com</p>
+            </div>
+            <div class="field">
+              <label for="email">Phone:</label>
+              <p id="email">516-578-0436</p>
             </div>
             <div class="field">
               <label for="Social">Social:</label>
