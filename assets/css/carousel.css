@@ -1,0 +1,9 @@
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.carousel-control-next-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
