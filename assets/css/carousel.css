@@ -33,5 +33,25 @@ h4 {
 }
 
 p {
-    line-height: 1.6;
+  line-height: 1.6;
+}
+
+.icons-div {
+  margin-top: 0rem !important;
+  padding-top: 0.5rem;
+}
+
+.icons-override {
+  margin-bottom: 0rem;
+}
+
+ul.icons li.icon-override {
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 736px) {
+  #header > div.icons-div:before {
+    top: 0px;
+    height: 0px;
+  }
 }
